@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Agenda – Akshit Jain for USG Fulton Senate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #FFC107; /* Bright yellow */
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero {
+            background: #8B0000;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .hero::before {
+            content: "~~~";
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: #FFC107;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .hero::after {
+            content: "~~~";
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            color: #FFC107;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .hero .separator {
+            width: 100px;
+            height: 4px;
+            background: #FFC107;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        nav {
+            background: #8B0000;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #A30000;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+            border: 3px solid #8B0000;
+        }
+        .agenda {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .agenda-item {
+            background: #8B0000;
+            color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .agenda-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .agenda-item h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #FFC107;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .agenda-item h3::before {
+            content: "🚀";
+            font-size: 24px;
+        }
+        .agenda-item p {
+            font-size: 16px;
+            color: white;
+            margin: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 16px;
+            color: #666;
+        }
+        .footer a {
+            color: #8B0000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer a:hover {
+            color: #FFC107;
+        }
+        @media (max-width: 600px) {
+            .hero { padding: 50px 15px; }
+            .hero h1 { font-size: 32px; }
+            .container { padding: 20px; }
+            .agenda-item h3 { font-size: 18px; }
+            .agenda-item p { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>My Campaign Agenda</h1>
+        <div class="separator"></div>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+    </nav>
+    <div class="container">
+        <div class="agenda">
+            <div class="agenda-item">
+                <h3>Advocate for More Paid Undergraduate Research Positions</h3>
+                <p>Research is a cornerstone of innovation, but too many students miss out due to lack of funding. I’ll push for more paid research opportunities at Fulton, ensuring every motivated student can gain hands-on experience and contribute to cutting-edge projects.</p>
+            </div>
+            <div class="agenda-item">
+                <h3>Improve Mental Health & Counseling Services at Fulton</h3>
+                <p>Engineering can be intense, and mental health support shouldn’t be an afterthought. I’ll advocate for expanded counseling services, stress-relief programs, and awareness campaigns tailored to Fulton students’ unique challenges.</p>
+            </div>
+            <div class="agenda-item">
+                <h3>Simplify Funding for Technical & Professional Organizations</h3>
+                <p>Student orgs like IEEE and SWE deserve streamlined funding processes to thrive. I’ll work to cut red tape, increase budget transparency, and secure more resources so these groups can host impactful events and projects.</p>
+            </div>
+            <div class="agenda-item">
+                <h3>Increase Travel Grants for Conferences & Competitions</h3>
+                <p>Showcasing your skills on a national stage shouldn’t break the bank. I’ll fight for more travel grants to help Fulton students attend conferences, competitions, and networking events, boosting your career and ASU’s reputation.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Vote here! <a href="https://www.asuusg.com/student-government-elections">#VoteAkshit</a></p>
+        </div>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'925a36586c04c018',t:'MTc0Mjg2MTcxMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
